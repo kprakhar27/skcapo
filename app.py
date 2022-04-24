@@ -56,7 +56,7 @@ def download_file(name):
 
 def main():
     if request.method == 'GET':
-        return(render_template('index2.html'))
+        return(render_template('index.html'))
             
     if request.method == 'POST':
         if 'file' not in request.files:
@@ -72,7 +72,7 @@ def main():
             x = np.asarray(Image.open(filename).resize((100,75)))
             img = x.reshape((1,75,100,3))
             out = loaded_model.predict(img)
-            prob = max(out[0])
+            prob = max(out[0])*100
             for i in np.argmax(out,axis=1):
                 cancer_type = label[i]
             print(prob, cancer_type)
