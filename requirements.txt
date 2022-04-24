@@ -1,0 +1,8 @@
+flask
+numpy
+pandas
+werkzeug
+PIL
+os
+keras
+gunicorn
