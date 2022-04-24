@@ -1,15 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sckapo - Skin cancer portal</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{{ url_for('static',filename='img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static',filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static',filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet" type="text/css">
+  <!-- =======================================================
+  * Template Name: Medicio - v4.7.0
+  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 <body>
-    <h1>Test</h1>
-    <form method=post enctype=multipart/form-data> <input type=file name=file>
-        <input type=submit value=Upload>
-    </form>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo me-auto"><img src="{{ url_for('static',filename='img/logo.png') }}" alt=""></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero"><strong>Home</strong></a></li>
+          <li><a class="nav-link scrollto" href="#about"><strong>About</strong></a></li>
+          <li><a class="nav-link scrollto" href="#featured-services"><strong>Instructions</strong></a></li>
+          <li><a class="nav-link scrollto" href="#departments"><strong>Types of skin cancer</strong></a></li>
+          <li><a class="nav-link scrollto" href="#contact"><strong>Test</strong></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <div id="gap-139407163" class="gap-element clearfix" style="display:block; height:auto; background-color:#ff9d6e">
+    <style>
+      #gap-139407163 {
+        padding-top: 15px;
+      }
+    </style>
+  </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(img/slide/slide-1.jpg)">
+          <div class="container">
+            <h2>WELCOME TO <span>SKCAPO</span></h2>
+            <p>Skin Cancer Foundation is dedicated to informing the public and the medical community about skin cancer,
+              how to prevent it by applying sunscreen, and the importance of early detection and prompt, effective
+              treatment.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(img/slide/slide-2.jpg)">
+          <div class="container">
+            <h2>SKIN CANCER</h2>
+            <p>Skin cancer is the out-of-control growth of abnormal cells in the epidermis, the outermost skin layer,
+              caused by unrepaired DNA damage that triggers mutations. These mutations lead the skin cells to multiply
+              rapidly and form malignant tumors.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(img/slide/slide-3.jpg)">
+          <div class="container">
+            <h2>CAUSES OF SKIN CANCER</h2>
+            <p>The two main causes of skin cancer are the sun’s harmful ultraviolet(UV) rays and the use of UV tanning
+              beds. The good news is that if skin cancer is caught early, your dermatologist can treat it with little or
+              no scarring and high odds of eliminating it entirely.</p>
+            <p>Doctors may even detect precancerous growths before they turn into full-blown skin cancers or penetrate
+              deeper into the skin.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section><!-- End Hero -->
+  <div id="gap-139407163" class="gap-element clearfix" style="display:block; height:auto; background-color:#ff9d6e">
+    <style>
+      #gap-139407163 {
+        padding-top: 15px;
+      }
+    </style>
+  </div>
+  <main id="main">
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>In educating the public and medical community about skin cancer, our portal has set the standard. The
+            prevention of skin cancer includes sun protection, early detection, and prompt, effective treatment.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="img/skin-cancer-prevention.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <!--  <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3> -->
+            <p class="fst-italic"> Skin cancer kills millions of people across the globe, so a cure is clearly urgently
+              needed. </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i>Our most important role is to teach you about the risks of skin
+                cancer, what you can do to protect yourself and how to identify potential skin cancers at an early stage
+                when they are usually curable.</li>
+              <li><i class="bi bi-check-circle"></i> Finding genes that need to be turned off to kill only cancer cells
+                is one of the best ways to do this.</li>
+              <li><i class="bi bi-check-circle"></i> A major objective of our study is to see whether India can improve
+                its knowledge about skin cancer prevention, at an early stage, by giving personalized information about
+                melanoma genetic risk.</li>
+              <li><i class="bi bi-check-circle"></i> We will also explore the psycho-social, ethical, and economic
+                implications of receiving this information. The results of our study are likely to influence the future
+                of skin cancer prevention in India.</li>
+            </ul>
+            <p> Doctors/physicians can use this tool to identify which class lesions belong to and choose treatment
+              accordingly. In addition, data cleaning methods such as hair removal, smoothening, etc. can further
+              optimize the models. </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Us Section -->
+    <div id="gap-139407163" class="gap-element clearfix" style="display:block; height:auto; background-color:#ff9d6e">
+      <style>
+        #gap-139407163 {
+          padding-top: 15px;
+        }
+      </style>
+    </div>
+    <!-- ======= Services Section ======= -->
+    <section id="featured-services" class="featured-services section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Instructions</h2>
+          <p>The following instructions will be helpful to individuals who are in the process of getting rid of this
+            dangerous disease.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <h4 class="title"><a href="">Be Eloquent</a></h4>
+            <p class="description">Inform all members of your healthcare team about your skin cancer diagnosis and any
+              proposed treatment.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fas fa-pills"></i></div>
+            <h4 class="title"><a href="">Systemic Pain</a></h4>
+            <p class="description">Carry a current medication list to all appointments to share with your doctors and
+              pharmacist.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-hospital-user"></i></div>
+            <h4 class="title"><a href="">But as you Observe</a></h4>
+            <p class="description">Bring someone with you to medical appointments.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-dna"></i></div>
+            <h4 class="title"><a href="">Great Pains</a></h4>
+            <p class="description">You will experience much greater pains when in treatment but keep patience you will
+              be alright at end.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fas fa-wheelchair"></i></div>
+            <h4 class="title"><a href="">No one Else</a></h4>
+            <p class="description">Educate yourself on the wide range of resources, medical navigational assistance, and
+              services available in your locality.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-notes-medical"></i></div>
+            <h4 class="title"><a href="">Such a Time</a></h4>
+            <p class="description">Seek support from friends, family, support groups, mental health professionals, and
+              others to help you cope with your diagnosis and treatment.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+    <div id="gap-139407163" class="gap-element clearfix" style="display:block; height:auto; background-color:#ff9d6e">
+      <style>
+        #gap-139407163 {
+          padding-top: 15px;
+        }
+      </style>
+    </div>
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Types of Skin Cancer</h2>
+          <p>There are mainly 7 types of Skin Cancer.</p>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                  <h4>Dermatofibrosarcoma protuberans (DFSP)</h4>
+                  <p>DFSP is a rare soft tumor which originally represents a cutaneous sarcoma.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                  <h4>Kaposi’s sarcoma</h4>
+                  <p>Kaposi's sarcoma is a type of cancer that forms in the lining of blood and lymph vessels.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                  <h4>Merkel cell carcinoma (MCC)</h4>
+                  <p>Merkel cell carcinoma is a rare but aggressive type of skin cancer that can be life-threatening.
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                  <h4>Microcystic adnexal carcinoma (MAC)</h4>
+                  <p>MAC is an apocrine tumor.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+                  <h4>Sebaceous carcinoma</h4>
+                  <p>Sebaceous carcinoma is a rare type of cancer that begins in an oil gland in your skin.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+                  <h4>Undifferentiated pleomorphic sarcoma</h4>
+                  <p>UPS is a rare type of cancer that begins mostly in the soft tissues of the body.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-7">
+                  <h4>Extramammary Paget’s disease (EMPD)</h4>
+                  <p>EMPD is characterized by a chronic eczema-like rash of the skin around the genital regions of males
+                    and females.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <h3>Dermatofibrosarcoma protuberans (DFSP)</h3>
+                <img src="img/NewDepartments-1.jpg" alt="" class="img-fluid">
+                <p class="fst-italic">Unlike common skin cancers that arise from cells in the outermost layer of skin,
+                  dermatofibrosarcoma protuberans (DFSP) is an extremely rare cancer that arises from cells in the
+                  deepest layer of the skin, known as the dermis.</p>
+                <p>DFSP is often treated by excisional surgery to remove the tumor and a margin of healthy skin.</p>
+                <p>DFSP can look like an ordinary scar, cyst, or bruise. It can develop anywhere on the body but is most
+                  commonly found on the arms, legs, or torso.</p>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <h3>Kaposi’s sarcoma</h3>
+                <img src="img/NewDepartments-2.jpg" alt="" class="img-fluid">
+                <p class="fst-italic">Kaposi’s sarcoma is a rare skin cancer that develops from the cells that line the
+                  blood vessels or lymph vessels.</p>
+                <p>Kaposi’s sarcoma can present as red, purple, or brown lesions on the skin, mucous membranes, lymph
+                  nodes, and other organs. The lesions may be flat or slightly raised and can grow and spread rapidly.
+                </p>
+                <p>Kaposi’s sarcoma can be treated in several different ways depending on the stage of the disease and
+                  the overall health of the patient.The more serious form of Kaposi’s sarcoma is treated mainly by
+                  systemic antiviral therapy to kill the virus that is causing the disease.</p>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <h3>Merkel cell carcinoma (MCC)</h3>
+                <img src="img/NewDepartments-3.jpg" alt="" class="img-fluid">
+                <p class="fst-italic"> MCC was named after Merkel cells due to the similar microscopic features.</p>
+                <p>Merkel cells are located deep in the top layer of the skin. Merkel cells are connected to nerves,
+                  signaling touch sensation as “touch receptors.”</p>
+                <p>While MCC is about three to five times more likely to be deadly than melanoma, with early detection,
+                  MCC can be treated successfully. Treatment becomes increasingly difficult once the disease has spread,
+                  but new options are now available.</p>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <h3>Microcystic adnexal carcinoma (MAC)</h3>
+                <img src="img/NewDepartments-4.jpg" alt="" class="img-fluid">
+                <p class="fst-italic">MAC is a very rare tumor of the skin that develops in the sweat gland, most often
+                  in the head and neck region.</p>
+                <p>MACs can be locally aggressive, growing in size and into nearby tissues, they rarely spread
+                  (metastasize) to more distant parts of the body. MAC can appear as a yellowish spot, raised patch, or
+                  smooth bump on the skin.</p>
+                <p>The cause of microcystic adnexal carcinoma is not yet known. Risk factors include exposure to
+                  ultraviolet light (UV) light from the sun, radiation treatment, and immunosuppression.</p>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <h3>Sebaceous carcinoma</h3>
+                <img src="img/NewDepartments-5.jpg" alt="" class="img-fluid">
+                <p class="fst-italic">Sebaceous carcinoma is an uncommon cancer that arises from the unchecked growth of
+                  cells that line the oil glands in the skin.</p>
+                <p>The tumor may arise as a lump or thickening of the skin on the eyelid or on the face that is often
+                  painless and sometimes oozes or bleeds. In other parts of the body, the tumor may look like a
+                  yellowish lump that sometimes bleeds.</p>
+                <p>About thirty percent of people with a genetic condition known as Muir-Torre syndrome develop
+                  sebaceous carcinomas.</p>
+              </div>
+              <div class="tab-pane" id="tab-6">
+                <h3>Undifferentiated pleomorphic sarcoma</h3>
+                <img src="img/NewDepartments-6.jpg" alt="" class="img-fluid">
+                <p class="fst-italic">Undifferentiated pleomorphic sarcomas are rare soft tissue tumors that often arise
+                  from cells known as fibroblasts, in the dermis.</p>
+                <p> Undifferentiated pleomorphic sarcomas can occur anywhere on the body. They can grow quickly and
+                  spread to other parts of the body.A growing lump or area of swelling on the skin that appears on the
+                  arms, legs, abdomen, or scalp.</p>
+                <p>Surgery is usually performed to remove the primary tumor. Depending on the size and location of the
+                  tumor, and the overall health of the patient, other treatment options include Mohs surgery, radiation
+                  therapy, chemotherapy, and immunotherapy.</p>
+              </div>
+              <div class="tab-pane" id="tab-7">
+                <h3>Extramammary Paget’s disease (EMPD)</h3>
+                <img src="img/NewDepartments-7.jpg" alt="" class="img-fluid">
+                <p class="fst-italic">EPMD is a rare disease that frequently presents in areas where apocrine sweat
+                  glands are abundant, in the armpits or around the anus and genitals.</p>
+                <p>The condition is related to Paget’s disease of the breast. This very slow-growing cancer sometimes
+                  takes years to become noticeable.</p>
+                <p>A persistent, sometimes irritating rash that resembles eczema and does not respond to topical
+                  treatments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Departments Section -->
+    <div id="gap-139407163" class="gap-element clearfix" style="display:block; height:auto; background-color:#ff9d6e">
+      <style>
+        #gap-139407163 {
+          padding-top: 15px;
+        }
+      </style>
+    </div>
+    <!-- ======= Frequently Asked Questioins Section =======
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questioins</h2>
+         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">The immune system is now the throat of the kids? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">The pain is the main reason that the kids dwell in the disease? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">The torturer of life adorns the throat of the pure. Various or quivering or disgraceful now need the pain medication? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section> End Frequently Asked Questioins Section -->
+    <!-- ======= Contact Section ======= -->
+    <section style="background-color: #eeeeee;" id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Test</h2>
+          <p>You can contact us through Email and contact number mentioned below. You can take this free test by filling
+            up the form and results will be displayed imediately.</p>
+        </div>
+      </div>
+      <div style="padding-left: 470px;" class="container">
+        <div class="row mt-5">
+          <!--      <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="info-box mt-4"
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@example.com<br>contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 123<br>+91 456</p>
+                </div>
+              </div>
+            </div>
+
+          </div>   -->
+          <div class="col-lg-6">
+            <form method="post" enctype=multipart/form-data> <!-- <div class="row">
+              <div class="col form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col form-group">
+              <input type="text" name="contactnumber" class="form-control" id="contactnumber"
+                placeholder="Contact Number" required>
+            </div>
+            <div class="col form-group">
+              <input type="text" class="form-control" name="gender" id="gender" placeholder="Gender" required>
+            </div>
+          </div> --> <div class="form-group mt-3">
+            <label for="myfile">Select images: </label>
+            <input type="file" id="myfile" class="form-control" name="file" rows="5" multiple required>
+          </div>
+          <!-- <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Comments"></textarea>
+          </div> -->
+          <!-- <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div> -->
+          <div class="text-center"><input type="submit" value="Upload" class="btn btn-secondary"></div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+  <div id="gap-139407163" class="gap-element clearfix" style="display:block; height:auto; background-color:#ff9d6e">
+    <style>
+      #gap-139407163 {
+        padding-top: 15px;
+      }
+    </style>
+  </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="container">
+            <div class="copyright"> &copy; Copyright <strong><span>Skcapo</span></strong>. All Rights Reserved <br>
+              <br>
+              <p>Email Us<br>
+                <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+            </div>
+          </div>
+          <!--    <div class="row">
+
+
+        <div class="col-lg-6" style="width:15%;text-align:center;padding:4px;float:left;" >
+          <div style="width:50%;text-align:center;padding:2px;margin:0 auto;">
+
+            <h5>Email Us</h5>
+            <p>info@example.com</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-right" style="width:15%;text-align:center;padding:4px;float:left;" >
+        <div style="width:75%;text-align:center;padding:7px;margin:0 auto;">
+        <i class="bx bx-envelope"></i>
+        </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" style="width:15%;text-align:center;padding:4px;float:left;">
+          <div style="width:50%;text-align:center;padding:2px;margin:0 auto;">
+
+            <h5>Call Us</h5>
+            <p>+91 123</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-right" style="width:15%;text-align:center;padding:4px;float:left;" >
+        <div style="width:75%;text-align:center;padding:7px;margin:0 auto;">
+        <i class="bx bx-phone-call"></i>
+        </div>
+        </div>
+
+      </div>  -->
+        </div>
+      </div>
+  </footer><!-- End Footer -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static',filename='vendor/purecounter/purecounter.js') }}"></script>
+  <script src="{{ url_for('static',filename='vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='vendor/php-email-form/validate.js') }}"></script>
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static',filename='main.js') }}"></script>
 </body>
 </html>

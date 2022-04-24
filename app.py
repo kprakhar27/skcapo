@@ -56,7 +56,7 @@ def download_file(name):
 
 def main():
     if request.method == 'GET':
-        return(render_template('index.html'))
+        return(render_template('index2.html'))
             
     if request.method == 'POST':
         if 'file' not in request.files:
